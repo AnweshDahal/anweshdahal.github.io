@@ -1,0 +1,17 @@
+{
+  "name": "new-portfolio",
+  "version": "1.0.0",
+  "description": "My New Protfolio Website",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnweshDahal/anweshdahal.github.io.git"
+  },
+  "author": "Anwesh Dahal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnweshDahal/anweshdahal.github.io/issues"
+  }
+}
