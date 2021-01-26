@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="row align-items-start top-bar">
+  <div class="row align-items-start top-bar fixed-top">
     <div class="brand nav col-lg-3 col-md-12 col-sm-12">
       <a href="#" class="nav-link">Anwesh Dahal's Portfolio</a>
     </div>
@@ -29,7 +29,7 @@
       <div class="intro-card card col-10 mb-2">
         <div class="card-body row">
           <div class="pic col-lg-4 col-sm-12 align-items-center justify-content-center">
-            <img src="./src/test.bmp" width="100%">
+            <img src="./src/test.bmp" width="100%" id="home">
           </div>
           <hr class="d-lg-none mt-3">
           <div class="about-text col-lg-8 col-sm-12">
@@ -54,7 +54,30 @@
         </div>
       </div>
     </div>
+    <div class="row justify-content-center mt-3">
+      <div class="skill-card card col-10 p-0">
+        <div class="skill-header">
+          <span class="skill-header-text">My Skills</span>
+        </div>
+        <div class="skill-body">
+          <div class="langs row">
+            <div class="lang col-lg-6 col-sm-12">
+              <div class="main-lang " id="html">HTML5 & CSS3</div>
+              <div class="frame-work text-muted">SCSS/ Bootstrap/ Materialize</div>
+            </div>
+            <div class="lang col-lg-6 col-sm-12">
+              <div class="main-lang" id="js">Javascript</div>
+              <div class="frame-work text-muted">Node.js/ React.js/ Electron.js</div>
+            </div>
+          </div>
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnweshDahal&layout=compact" alt="">
+        </div>
+      </div>
+    </div>
   </div>
+  <a href="#home" class="btn go-up" id="goUp">
+    <img src="./src/arrowup.svg" alt="" /></a>
+  <script src="src/script.js"></script>
 </body>
 
 </html>
