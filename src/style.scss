@@ -1,1 +1,75 @@
-// Main Style
+// Importing variables from bootstrap scss
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/breakpoints";
+// @import "../node_modules/bootstrap/scss/mixins";
+
+// importing custom variables
+@import "./variables";
+
+* {
+	font-family: "Fira Sans", sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+	background-image: url(./pattern2.svg);
+}
+
+.top-bar {
+	.brand {
+		background-color: $black;
+		a {
+			color: $white;
+			margin-left: 10px;
+		}
+	}
+
+	.nav-links {
+		background-color: $indigo-600;
+		padding-left: 10px;
+		a {
+			color: $white;
+		}
+	}
+}
+
+.intro-card {
+	background-color: $gray-200;
+	border: none;
+	.pic {
+		img {
+			border-radius: 0.25rem;
+		}
+	}
+
+	.about-text {
+		.greet {
+			font-size: 36px;
+			color: $black;
+		}
+		.sub-title {
+			font-size: $size3;
+			font-weight: 500;
+			color: $indigo-700;
+		}
+		.desc {
+			text-align: justify;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.intro-card {
+		.pic {
+			text-align: center;
+			img {
+				object-fit: cover;
+				width: 256px;
+				height: 256px;
+				border-radius: 50%;
+				margin: 10px auto;
+			}
+		}
+	}
+}
