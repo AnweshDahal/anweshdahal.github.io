@@ -84,16 +84,80 @@ body {
 				.main-lang {
 					font-size: 2rem;
 					font-weight: 600;
+					span {
+						font-size: inherit;
+					}
 				}
+			}
+		}
+		.bar {
+			display: flex;
+			height: 0.5rem;
+			border-radius: 0.25rem;
+			color: $white;
+			overflow: hidden;
+			.html-section,
+			.css-section,
+			.js-section,
+			.java-section,
+			.py-section {
+				text-align: center;
+				height: inherit;
+			}
+			.html-section {
+				width: 34.24%;
+				background-color: #e34c26;
+			}
+			.css-section {
+				width: 20.73%;
+				background-color: #2c003d;
+			}
+			.js-section {
+				width: 18.2%;
+				background-color: $yellow-600;
+			}
+			.java-section {
+				width: 16.23%;
+				background-color: #b07219;
+			}
+			.py-section {
+				width: 10.6%;
+				background-color: #3572a5;
+			}
+		}
+		.legend {
+			.legend-val {
+				font-weight: 500;
+			}
+			.html {
+				color: #e34c26;
+			}
+			.css {
+				color: #2c003d;
+			}
+			.js {
+				color: $yellow-600;
+			}
+			.java {
+				color: #b07219;
+			}
+			.py {
+				color: #3572a5;
 			}
 		}
 	}
 }
 #html {
-	color: $red-500;
+	color: #e34c26;
 }
 #js {
 	color: $yellow-600;
+}
+#java {
+	color: #b07219;
+}
+#py {
+	color: #3572a5;
 }
 .go-up {
 	// display: 0;
@@ -119,10 +183,10 @@ body {
 @include media-breakpoint-down(md) {
 	.top-bar {
 		.brand {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 		.nav {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 	}
 	.intro-card {
@@ -146,11 +210,15 @@ body {
 				.main-lang {
 					font-size: 2rem;
 					font-weight: 600;
+					justify-content: center;
+					span {
+						line-height: inherit;
+					}
 				}
 			}
 		}
-		.github-stat {
-			display: none;
+		.bar {
+			width: 100%;
 		}
 	}
 }
