@@ -117,14 +117,22 @@ body {
 }
 
 @include media-breakpoint-down(md) {
+	.top-bar {
+		.brand {
+			font-size: 0.8rem;
+		}
+		.nav {
+			font-size: 0.8rem;
+		}
+	}
 	.intro-card {
 		margin-top: 90px;
 		.pic {
 			text-align: center;
 			img {
 				object-fit: cover;
-				width: 256px;
-				height: 256px;
+				width: 100%;
+				height: 100%;
 				border-radius: 50%;
 				margin: 10px auto;
 			}
@@ -140,6 +148,9 @@ body {
 					font-weight: 600;
 				}
 			}
+		}
+		.github-stat {
+			display: none;
 		}
 	}
 }
