@@ -20,27 +20,27 @@ body {
 }
 
 .top-bar {
-	box-shadow: 0px 2px 16px #2c003d;
+	box-shadow: 0px 2px 16px $top-bar-shadow;
 	.brand {
-		background-color: $black;
+		background-color: $top-bar-brand-bg;
 		a {
-			color: $white;
+			color: $top-bar-brand-color;
 			margin-left: 10px;
 		}
 	}
 
 	.nav-links {
-		background-color: $indigo-600;
+		background-color: $nav-links-bg;
 		padding-left: 10px;
 		a {
-			color: $white;
+			color: $nav-links-color;
 		}
 	}
 }
 
 .intro-card {
 	margin-top: 40px;
-	background-color: $gray-200;
+	background-color: $intro-card-bg;
 	border: none;
 	.pic {
 		img {
@@ -51,12 +51,12 @@ body {
 	.about-text {
 		.greet {
 			font-size: 36px;
-			color: $black;
+			color: $greet-color;
 		}
 		.sub-title {
 			font-size: $size3;
 			font-weight: 500;
-			color: $indigo-700;
+			color: $greet-subtitle-color;
 		}
 		.desc {
 			text-align: justify;
@@ -68,12 +68,12 @@ body {
 	border: none;
 	overflow: hidden;
 	.skill-header {
-		background-color: $black;
+		background-color: $skill-header-bg;
 		padding-left: 1rem;
 		.skill-header-text {
 			font-size: 1.5rem;
 			font-weight: 500;
-			color: $white;
+			color: $skill-header-color;
 		}
 	}
 
@@ -94,7 +94,6 @@ body {
 			display: flex;
 			height: 0.5rem;
 			border-radius: 0.25rem;
-			color: $white;
 			overflow: hidden;
 			.html-section,
 			.css-section,
@@ -106,23 +105,23 @@ body {
 			}
 			.html-section {
 				width: 34.24%;
-				background-color: #e34c26;
+				background-color: $html-leg;
 			}
 			.css-section {
 				width: 20.73%;
-				background-color: #2c003d;
+				background-color: $css-leg;
 			}
 			.js-section {
 				width: 18.2%;
-				background-color: $yellow-600;
+				background-color: $js-leg;
 			}
 			.java-section {
 				width: 16.23%;
-				background-color: #b07219;
+				background-color: $java-leg;
 			}
 			.py-section {
 				width: 10.6%;
-				background-color: #3572a5;
+				background-color: $py-leg;
 			}
 		}
 		.legend {
@@ -130,34 +129,71 @@ body {
 				font-weight: 500;
 			}
 			.html {
-				color: #e34c26;
+				color: $html-leg;
 			}
 			.css {
-				color: #2c003d;
+				color: $css-leg;
 			}
 			.js {
-				color: $yellow-600;
+				color: $js-leg;
 			}
 			.java {
-				color: #b07219;
+				color: $java-leg;
 			}
 			.py {
-				color: #3572a5;
+				color: $py-leg;
 			}
 		}
 	}
 }
+
+.works {
+	background-color: $works-bg;
+	border-left-color: $works-border-color;
+	border-left-width: 0.25rem;
+	.title {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $works-title-color;
+	}
+}
+.works-header {
+	padding: 0.5rem;
+	background-color: $works-header-bg;
+	border-left-color: $works-header-border-color;
+	.title {
+		color: $works-header-title-color;
+	}
+}
+.works-card {
+	.tags {
+		.badge {
+			font-weight: 400;
+		}
+	}
+}
+
+.links {
+	.btn {
+		background-color: $super-green;
+		color: $white;
+	}
+}
 #html {
-	color: #e34c26;
+	color: $html-leg;
 }
 #js {
-	color: $yellow-600;
+	color: $js-leg;
 }
 #java {
-	color: #b07219;
+	color: $java-leg;
 }
 #py {
-	color: #3572a5;
+	color: $py-leg;
+}
+
+#fig {
+	color: $green;
 }
 .go-up {
 	// display: 0;
