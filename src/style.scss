@@ -149,8 +149,6 @@ body {
 
 .works {
 	background-color: $works-bg;
-	border-left-color: $works-border-color;
-	border-left-width: 0.25rem;
 	.title {
 		font-size: 1.5rem;
 		font-weight: 500;
@@ -160,6 +158,7 @@ body {
 .works-header {
 	padding: 0.5rem;
 	background-color: $works-header-bg;
+	border-left-width: 0.25rem;
 	border-left-color: $works-header-border-color;
 	.title {
 		color: $works-header-title-color;
@@ -192,6 +191,10 @@ body {
 	color: $py-leg;
 }
 
+#cs {
+	color: $super-indigo;
+}
+
 #fig {
 	color: $green;
 }
@@ -214,6 +217,81 @@ body {
 		width: 32px;
 		position: relative;
 	}
+}
+
+.contact-card {
+	border: none;
+	overflow: hidden;
+	background: none;
+	.contact-card-header {
+		padding: 0.5rem;
+		background-color: $super-yellow;
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $black;
+	}
+	.contact-card-body {
+		padding: 0.5rem;
+		background-color: $white;
+		div {
+			font-size: 1rem;
+			a {
+				text-decoration: none;
+				font-weight: 500;
+				color: #292929;
+			}
+		}
+	}
+}
+
+footer {
+	margin-top: 10px;
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	background-color: black;
+	align-items: center;
+	justify-content: center;
+	.footer-text {
+		color: $white;
+		a {
+			text-decoration: none;
+			color: $gray-500;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+.red-border-left {
+	border-left-color: $super-red;
+	border-left-width: 0.25rem;
+}
+
+.orange-border-left {
+	border-left-color: $super-orange;
+	border-left-width: 0.25rem;
+}
+
+.yellow-border-left {
+	border-left-color: $super-yellow;
+	border-left-width: 0.25rem;
+}
+
+.green-border-left {
+	border-left-color: $super-green;
+	border-left-width: 0.25rem;
+}
+
+.blue-border-left {
+	border-left-color: $super-blue;
+	border-left-width: 0.25rem;
+}
+
+.indigo-border-left {
+	border-left-color: $super-indigo;
+	border-left-width: 0.25rem;
 }
 
 @include media-breakpoint-down(md) {
