@@ -1,5 +1,1 @@
 *.map
-node_modules/bootstrap/js
-node_modules/bootstrap/scss
-node_modules/bootstrap/README.md
-*sf*woff2
