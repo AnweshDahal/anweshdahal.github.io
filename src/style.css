@@ -1,1 +1,275 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #240400;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #efe6e5 !important;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.name span {
+  font-family: "Righteous", sans-serif;
+  font-size: 2rem;
+  color: #240400;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contact__link .contact__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #240400;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.personal-statement {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.location-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.1em;
+  color: #240400;
+  font-weight: 600;
+}
+
+.greeting {
+  margin-top: 0px;
+  color: #240400;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+
+.intro-paragraph {
+  font-weight: 500;
+  color: #240400;
+  margin-block: 3em;
+}
+
+.links-section {
+  display: flex;
+  align-items: center;
+}
+.links-section .contact__link {
+  margin-right: 1em;
+  text-decoration: none;
+  color: #240400;
+  font-weight: 600;
+}
+
+.skills {
+  margin-bottom: 3em;
+}
+
+.experience {
+  margin-bottom: 3em;
+}
+.experience .experience__title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.experience .experience__entry {
+  position: relative;
+  margin: 0px;
+  padding: 2em;
+  border-left: 0.3em solid #240400;
+  background-color: #e7e0df;
+  border-top-right-radius: 0.4em;
+}
+.experience .experience__entry:last-child {
+  border-bottom-right-radius: 0.4em;
+}
+.experience .experience__entry .experience__marker {
+  position: absolute;
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  top: 2.25em;
+  left: -0.95em;
+  background-color: #efe6e5;
+  border: 0.3em solid #240400;
+  border-radius: 1em;
+}
+.experience .experience__entry .experience__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.experience .experience__entry .experience__header .experience__org-title .experience__entry-data {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 0em;
+}
+.experience .experience__entry .experience__header .experience__org-title .experience__entry-title {
+  font-weight: 300;
+}
+.experience .experience__entry .experience__header .experience-date {
+  font-weight: 500;
+}
+.experience .experience__entry .experience__header .experience-date::before {
+  content: "[";
+}
+.experience .experience__entry .experience__header .experience-date::after {
+  content: "]";
+}
+.experience .experience__entry .experience__body ul {
+  list-style-type: none;
+  border-left: 0.3em solid #ffaf19;
+}
+.experience .experience__entry .experience__body ul li {
+  font-weight: 600;
+  margin-block: 0.5em;
+}
+
+.education {
+  margin-bottom: 2em;
+}
+.education .education__title {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.education .education__entry {
+  background-color: #e7e0df;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+.education .education__entry .education__entry-date {
+  font-weight: 600;
+}
+.education .education__entry .education__entry-degree-college {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.education .education__entry .education__entry-degree-college .education__entry-title {
+  font-size: 1.25rem;
+}
+.education .education__entry .education__entry-degree-college .education__entry-title .text-muted {
+  font-size: 0.9rem;
+}
+.education .education__entry .education__entry-courses {
+  width: 50%;
+  margin-top: 1em;
+}
+
+.projects .projects__title {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.projects .projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  row-gap: 1em;
+}
+@media only screen and (min-width: 1024px) {
+  .projects .projects__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.projects .projects__grid .projects__entry {
+  padding: 1em;
+  min-height: 376px;
+  background-color: #e7e0df;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.4em;
+}
+.projects .projects__grid .projects__entry .project__entry-header {
+  margin-bottom: 1em;
+}
+.projects .projects__grid .projects__entry .project__entry-header .project__entry-title {
+  font-size: 1.25rem;
+}
+.projects .projects__grid .projects__entry .project__entry-header .project__entry-title span {
+  font-size: inherit;
+  font-weight: 600;
+}
+.projects .projects__grid .projects__entry .project__entry-header .project__entry-title .material-symbols-outlined {
+  margin-right: 0.3em;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.projects .projects__grid .projects__entry .project__entry-header .project__entry-tags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-block: 1em;
+}
+.projects .projects__grid .projects__entry .project__entry-header .project__entry-tags .project__tag {
+  margin-right: 0.5em;
+  background-color: #240400;
+  color: #efe6e5;
+  padding-inline: 0.3em;
+  border-radius: 0.3em;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.projects .projects__grid .projects__entry .project__entry-header .project__entry-tags .project__tag::before {
+  content: "#";
+}
+.projects .projects__grid .projects__entry .project__entry-links .project__entry-link a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact {
+  margin-top: 3em;
+}
+.contact .row .col-12 .contact__links .contact__message-title,
+.contact .row .col-md-12 .contact__links .contact__message-title,
+.contact .row .col-lg-6 .contact__links .contact__message-title {
+  font-weight: 600;
+}
+.contact .row .col-12 .contact__links .contact__links-container,
+.contact .row .col-md-12 .contact__links .contact__links-container,
+.contact .row .col-lg-6 .contact__links .contact__links-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.contact .row .col-12 .contact__links .contact__links-container a,
+.contact .row .col-md-12 .contact__links .contact__links-container a,
+.contact .row .col-lg-6 .contact__links .contact__links-container a {
+  margin-right: 0.5em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer {
+  padding: 2em;
+  text-align: center;
+  font-weight: 600;
+}
+.footer a {
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-size: 1rem !important;
+}/*# sourceMappingURL=style.css.map */

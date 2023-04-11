@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/bootstrap.css" />
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="shortcut icon" href="./src/logo_16.png" type="image/x-icon" />
     <!-- New Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Righteous&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap CDN -->
@@ -20,11 +19,12 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <!-- Font Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/4a7de06f5d.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
     <title>
       Anwesh Dahal | Web Developer, Frontend Developer, Application Developer
     </title>
@@ -34,30 +34,474 @@
     <!-- Header/ Top Section -->
     <header class="header">
       <!-- Header contents -->
+      <div class="container py-3">
+        <div class="row">
+          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <p class="name">
+              <span>ANWESH.</span>
+            </p>
+          </div>
+          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-end">
+            <p class="contact__link">
+              <a
+                href="mailto:anweshdahal0102@gmail.com"
+                class="contact__link"
+                target="_blank"
+                ><span>anweshdahal0102@gmail.com</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- Personal Statemen -->
-    <section class="personal-statement"></section>
+    <section class="container personal-statement">
+      <div class="row">
+        <div class="col col-12 col-md-12 col-lg-6">
+          <p class="location-details">
+            <span class="material-symbols-outlined me-2"> location_on </span>
+            <span>Kupondole, Lalitpur, Nepal</span>
+          </p>
+          <h1 class="greeting">Hello, I'm <br />Anwesh Dahal</h1>
+          <p class="intro-paragraph">
+            I am a web and application developer based in Lalitpur, Nepal. I
+            have a peculiar interest in simplicity and design, which I try to
+            implement in my works. I am currently working with technologies such
+            as VueJs, ReactJs, express.js and occasional android development.
+          </p>
+          <p class="links-section">
+            <a
+              href="https://github.com/AnweshDahal"
+              class="contact__link"
+              target="_blank"
+              ><span>GitHub</span>
+              <span class="material-symbols-outlined"> arrow_outward </span></a
+            >
+            <a
+              href="https://www.linkedin.com/in/anweshdahal/"
+              target="_blank"
+              class="contact__link"
+              ><span>Linkedin</span>
+              <span class="material-symbols-outlined"> arrow_outward </span></a
+            >
+            <a
+              href="https://www.figma.com/@anweshdahal"
+              class="contact__link"
+              target="_blank"
+              ><span>Figma</span>
+              <span class="material-symbols-outlined"> arrow_outward </span></a
+            >
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="src/group_7.png" alt="" style="width: 100%" />
+        </div>
+      </div>
+    </section>
     <!-- Experience Section -->
-    <section class="experience"></section>
+    <section class="container experience">
+      <h2 class="experience__title">Professional Experience</h2>
+      <div class="experience__entry">
+        <div class="experience__marker"></div>
+        <div class="experience__header">
+          <div class="experience__org-title">
+            <h3 class="experience__entry-data">Beam Lab Pvt. Ltd.</h3>
+            <span class="experience__entry-title"
+              >Web and Application Developer</span
+            >
+          </div>
+          <p class="experience-date">2022 February - Present</p>
+        </div>
+        <div class="experience__body">
+          <ul>
+            <li>
+              Created websites for a diverse background of clients using
+              Wordpress.
+            </li>
+            <li>
+              Developed eCommerce applications for different clients using
+              Wordpress and WooCommerce.
+            </li>
+            <li>
+              Researched and conducted Search Engine Optimization for different
+              clients
+            </li>
+            <li>
+              Worked on various in house projects, (including UI Design), using
+              VueJs
+            </li>
+            <li>
+              Used technologies such as Jira, Git SCM and GitHub to collaborate
+              effectively with a team of 3 developers.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="experience__entry">
+        <div class="experience__marker"></div>
+        <div class="experience__header">
+          <div class="experience__org-title">
+            <h3 class="experience__entry-data">Technorio Inc.</h3>
+            <span class="experience__entry-title"
+              >Web and Application Developer Intern</span
+            >
+          </div>
+          <p class="experience-date">2021 August - 2022 February</p>
+        </div>
+        <div class="experience__body">
+          <ul>
+            <li>
+              Got experience in using Git and GitHub while collaborating with a
+              team of 3.
+            </li>
+            <li>
+              Integrated additional features into a client's application using
+              Laravel
+            </li>
+            <li>
+              Developed admin panels for various clients using Laravel and MySQL
+            </li>
+            <li>
+              Added scalable and maintainable API endpoints for an in house
+              project using Laravel.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!-- Education Section -->
-    <section class="education"></section>
+    <section class="container education">
+      <h2 class="education__title">Education</h2>
+      <div class="education__entry">
+        <div class="education__entry-date">2019-2022</div>
+        <div class="education__entry-degree-college">
+          <div class="education__entry-title">
+            BSc. (Hons.) Computing
+            <span class="text-muted">(First Class Honours)</span>
+          </div>
+          <div class="education__entry-college">
+            Islington College Kathmandu
+          </div>
+        </div>
+        <div class="education__entry-courses">
+          <strong>Courses: </strong>Application Development/ Programming
+          (C#.Net/ ASP.Net/ Java), Artificial Intelligence, Databases (Microsoft
+          SQL Server, Oracle Database, MySQL)
+        </div>
+      </div>
+    </section>
     <!-- Projects Section -->
-    <section class="projects"></section>
-    <!-- Misc Section -->
-    <section class="spotify-playlist">
-      <iframe
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/playlist/4Cc9xfH1iJAEHqaz0APqYt?utm_source=generator"
-        width="100%"
-        height="352"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
+    <section class="container projects">
+      <h2 class="projects__title">Personal Projects</h2>
+      <div class="projects__grid">
+        <!-- Real Estate Nepal -->
+        <div class="projects__entry">
+          <div class="project__entry-header">
+            <div class="project__entry-title">
+              <span>Real Estate Nepal</span>
+            </div>
+            <div class="project__entry-tags">
+              <span class="project__tag">PHP</span>
+              <span class="project__tag">Laravel</span>
+              <span class="project__tag">Leaflet</span>
+              <span class="project__tag">MySQL</span>
+            </div>
+            <p class="project__entry-description">
+              <strong>Real Estate Nepal</strong> is an online real estate
+              listing application which aims to provide a unified and digital
+              solution people to list and search for properties online. The
+              application was made with intent to save people's time and cut out
+              the middle man in the process. In addition to the feature of
+              listing property for sale, the user could list the proeprty for
+              rent making it useful for a wider range of users. This project was
+              developed for BSc. (Hons.) Computing Final Year Project.
+            </p>
+          </div>
+
+          <p class="project__entry-links">
+            <span class="project__entry-link">
+              <a
+                href="https://github.com/AnweshDahal/real-estate-nepal"
+                class="contact__link--github"
+                target="_blank"
+                ><span>GitHub</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              Repository
+            </span>
+          </p>
+        </div>
+        <!-- Kompost Web Application -->
+        <div class="projects__entry">
+          <div class="project__entry-header">
+            <div class="project__entry-title">
+              <span>Kompost Web Application</span>
+            </div>
+            <div class="project__entry-tags">
+              <span class="project__tag">Javascript</span>
+              <span class="project__tag">VueJS</span
+              ><span class="project__tag">Vuetify</span>
+            </div>
+            <p class="project__entry-description">
+              <strong>Kompost</strong> was our submission for Ace Ignite 48
+              Hours Hackathon 2022, this app was developed for a household
+              organic waste to compost serivce. The user would signup for this
+              application using which they could request the business to pickup
+              their organic waste.
+            </p>
+          </div>
+
+          <p class="project__entry-links">
+            <span class="project__entry-link">
+              <a
+                href="https://github.com/AnweshDahal/kompost-frontend"
+                class="contact__link--github"
+                target="_blank"
+                ><span>GitHub</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              Repository
+            </span>
+            <span class="project__entry-link">&</span>
+            <span class="project__entry-link">
+              <a
+                href="https://kompost.netlify.app/#/"
+                class="contact__link--github"
+                target="_blank"
+                ><span>Link</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              for the Application (Mobile View Only)
+            </span>
+          </p>
+        </div>
+        <!-- Seeker -->
+        <div class="projects__entry">
+          <div class="project__entry-header">
+            <div class="project__entry-title"><span>Seeker</span></div>
+            <div class="project__entry-tags">
+              <span class="project__tag">HTML</span>
+              <span class="project__tag">Javascript</span
+              ><span class="project__tag">CSS</span>
+            </div>
+            <p class="project__entry-description">
+              <strong>Seeker</strong> is a simple chrome extension which was
+              built for personal use. It was used to quickly fetch a website's
+              details such as title, author, and URL of a webpage which was used
+              for citation in my college assignment.
+            </p>
+          </div>
+
+          <p class="project__entry-links">
+            <span class="project__entry-link">
+              <a
+                href="https://github.com/AnweshDahal/Seeker"
+                class="contact__link--github"
+                target="_blank"
+                ><span>GitHub</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              Repository
+            </span>
+          </p>
+        </div>
+        <!-- Food Monger -->
+        <div class="projects__entry">
+          <div class="project__entry-header">
+            <div class="project__entry-title"><span>Foodmonger</span></div>
+            <div class="project__entry-tags">
+              <span class="project__tag">Javascript</span>
+              <span class="project__tag">ReactJs</span>
+            </div>
+            <p class="project__entry-description">
+              <strong>Foodmonger</strong> was my first react project, it is a
+              simple web application that displays various recipies by searching
+              the edamam API.
+            </p>
+          </div>
+
+          <p class="project__entry-links">
+            <span class="project__entry-link">
+              <a
+                href="https://github.com/AnweshDahal/recipe"
+                class="contact__link--github"
+                target="_blank"
+                ><span>GitHub</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              Repository
+            </span>
+            <span class="project__entry-link">&</span>
+            <span class="project__entry-link">
+              <a
+                href="https://food-monger.netlify.app/"
+                class="contact__link--github"
+                target="_blank"
+                ><span>Link</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              for the Application
+            </span>
+          </p>
+        </div>
+        <!-- Bookshelf -->
+        <div class="projects__entry wip">
+          <div class="project__entry-header">
+            <div class="project__entry-title">
+              <span class="material-symbols-outlined"> construction </span
+              ><span>Bookshelf</span>
+            </div>
+            <div class="project__entry-tags">
+              <span class="project__tag">Android</span>
+              <span class="project__tag">Kotlin</span
+              ><span class="project__tag">Firebase</span
+              ><span class="project__tag">MUI3</span>
+            </div>
+            <p class="project__entry-description">
+              <strong>Bookshelf</strong> is my first try at Android Development,
+              this is a reading list tracking application that will use Google
+              Books API to search for books and store the information for its
+              reading status in Firebase. This app is being designed using
+              Material 3. In addition to these, this app will allow the user to
+              quickly add the books they own or have access to using barcode
+              scanner which will scan the ISBN number.
+            </p>
+          </div>
+        </div>
+        <!-- Podcast Player -->
+        <div class="projects__entry wip">
+          <div class="project__entry-header">
+            <div class="project__entry-title">
+              <span class="material-symbols-outlined"> construction </span
+              ><span>Podcast Player</span>
+            </div>
+            <div class="project__entry-tags">
+              <span class="project__tag">Javascript</span>
+              <span class="project__tag">VueJS</span
+              ><span class="project__tag">Vuetify</span
+              ><span class="project__tag">Firebase</span>
+            </div>
+            <p class="project__entry-description">
+              <strong>Podcast Player</strong> is a hobby project which is under
+              construction. I wanted a personal podcast player with UI of my
+              liking, while trying out the newly released Vuetify for Vue 3.
+              This application uses the iTunes Search API to search for podcast,
+              and play them using the fetched RSS feed. I wanted to try out
+              Firebase and this was the perfect project to do so.
+            </p>
+          </div>
+
+          <p class="project__entry-links">
+            <span class="project__entry-link">
+              <a
+                href="mailto:anweshdahal0102@gmail.com"
+                class="contact__link--github"
+                target="_blank"
+                ><span>GitHub</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              Repository
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="container contact">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="src/group_7.png" alt="" style="width: 90%" />
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="contact__links">
+            <h2 class="contact__message-title">Contact Me</h2>
+            <p class="contact__message-text">
+              Although, I am not much of a social media guy, I will happily
+              respond to your mesages. Let get in touch and talk about stuff.
+            </p>
+            <div class="contact__links-container">
+              <a
+                href="mailto:anweshdahal0102@gmail.com"
+                target="_blank"
+                class="contact__link--github"
+                ><span>Email</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              <a
+                href="https://github.com/AnweshDahal"
+                class="contact__link--github"
+                target="_blank"
+                ><span>GitHub</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              <a
+                href="https://www.linkedin.com/in/anweshdahal/"
+                class="contact__link--github"
+                target="_blank"
+                ><span>LinkedIn</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+              <a
+                href="https://discordapp.com/users/390819493485740045"
+                class="contact__link--github"
+                target="_blank"
+                ><span>Discord</span>
+                <span class="material-symbols-outlined">
+                  arrow_outward
+                </span></a
+              >
+            </div>
+            <p class="contact__message-text">
+              Meanwhile lets vibe together, here's my playlist which have been
+              replayed over a concerning number of times
+            </p>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/4Cc9xfH1iJAEHqaz0APqYt?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <span>2023 Anwesh Dahal, No Rights Reserved &middot;</span>
+      <a
+        href="https://github.com/AnweshDahal/recipe"
+        class="contact__link--github"
+        ><span>GitHub</span>
+        <span class="material-symbols-outlined"> arrow_outward </span></a
+      >
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
